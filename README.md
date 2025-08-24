@@ -10,14 +10,17 @@ but elements within each row may have different priorities that affect retrieval
 
 ## 📖 Motivation
 
-Traditional data structures like **stack**, **queue**, and **priority queue** solve many fundamental problems in computer science.  
-However, in some real-world scenarios, we need:
+## 📖 Motivation
 
-- **Grouping of elements into rows or batches** (e.g., events in a frame, tasks in a batch).  
-- **Priorities within each row**, not just across the entire structure.  
-- **Row-level access** where some rows are considered "higher" than others (like stack ordering).  
+The idea for PRS was inspired by a real-life scenario: organizing a personal to-do list on a wall using sticky notes.  
+- Each **day** represented a "row".  
+- Within each day, tasks had **different priority levels** (urgent, normal, optional).  
+- I noticed that existing structures like stacks or queues couldn’t fully capture this two-dimensional organization:  
+  - A stack gives order but no priority.  
+  - A priority queue gives priority but no row/batch grouping.  
 
-The **Priority Row Stack (PRS)** addresses these gaps by combining stack-like row organization with intra-row priority-based access.
+This led to the creation of the **Priority Row Stack (PRS)**:  
+A structure that combines **row-based grouping** (like days) with **intra-row priority** (like sticky note importance).
 
 ---
 
