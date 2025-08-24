@@ -91,3 +91,61 @@ prs.push("task4", priority=2)   # goes into new row since row 1 is full
 
 print(prs.pop())  # -> "task2" (highest priority in top row)
 print(prs.pop())  # -> "task1"
+```
+
+---
+
+## 🎮 Real-World Applications
+
+- **Game Engines**:  
+  Store game events in frames (rows), but execute them based on urgency (priority).  
+
+- **Batch Task Scheduling**:  
+  In OS or distributed systems, tasks are grouped in batches but within each batch some are more urgent.  
+
+- **Undo/Redo Systems**:  
+  Group actions in rows (like editing sessions), but allow undo of higher-priority changes first.  
+
+- **Networking**:  
+  Data packets grouped by time window (row), prioritized by type (control > data > logs).  
+
+---
+
+## ⏱️ Complexity Summary
+
+| Operation | Worst-case Complexity |
+|-----------|------------------------|
+| `push`    | O(1)                   |
+| `pop`     | O(k)                   |
+| `peek`    | O(k)                   |
+| `isEmpty` | O(1)                   |
+
+*(Future work may explore faster priority lookups using auxiliary heaps or balanced trees per row.)*
+
+---
+
+## 🛠️ Roadmap
+
+- [ ] Formalize definition in academic-style paper.  
+- [ ] Implement reference version in **Python**.  
+- [ ] Add optimized versions in **C++** and **Rust**.  
+- [ ] Benchmark against stack, queue, priority queue.  
+- [ ] Write blog post explaining PRS with diagrams.  
+- [ ] Submit preprint to **arXiv**.  
+- [ ] Create Wikipedia page after peer-reviewed mentions.  
+
+---
+
+## 📚 References
+
+- Classic structures: Stack, Queue, Priority Queue.  
+- [Introduction to Algorithms (CLRS)](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)  
+
+---
+
+## 👨‍💻 Author
+
+**Jeeval Jolly Jacob**  
+Inventor of the **Priority Row Stack (PRS)**, a new data structure idea in 2025.  
+
+Contributions welcome! Feel free to fork and open issues.
