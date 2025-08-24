@@ -1,4 +1,4 @@
-# priority-row-stack
+# Priority-Row-Stack
 A novel data structure combining stack semantics with intra-row priority levels.
 # Priority Row Stack (PRS)
 
