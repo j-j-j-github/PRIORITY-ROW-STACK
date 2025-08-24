@@ -10,8 +10,6 @@ but elements within each row may have different priorities that affect retrieval
 
 ## 📖 Motivation
 
-## 📖 Motivation
-
 The idea for PRS was inspired by a real-life scenario: organizing a personal to-do list on a wall using sticky notes.  
 - Each **day** represented a "row".  
 - Within each day, tasks had **different priority levels** (urgent, normal, optional).  
