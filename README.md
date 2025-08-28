@@ -113,12 +113,13 @@ print(prs.pop())  # -> "task1"
 
 ## ⏱️ Complexity Summary
 
-| Operation | Worst-case Complexity |
-|-----------|------------------------|
-| `push`    | O(1)                   |
-| `pop`     | O(k)                   |
-| `peek`    | O(k)                   |
-| `isEmpty` | O(1)                   |
+
+| Operation | Amortized Complexity | Worst-case Complexity | Notes |
+|-----------|-----------------------|------------------------|-------|
+| `push`    | **O(1)**             | O(m)                  | Direct insert into active row; may need to check up to `m` rows if full |
+| `pop`     | **O(1)**             | O(n·m)                | Usually constant; in worst case scans rows × priorities to find next item |
+| `peek`    | **O(1)**             | O(n·m)                | Same as `pop` but without removal |
+| `isEmpty` | **O(1)**             | O(1)                  | Simple counter/length check |
 
 *(Future work may explore faster priority lookups using auxiliary heaps or balanced trees per row.)*
 
