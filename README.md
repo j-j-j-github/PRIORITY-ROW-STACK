@@ -123,6 +123,7 @@ python3 -m examples.todo_sticky_notes
 # Compares PRS performance against a global priority queue and plain stack.
 # Provides metrics like average completion position, inversions, and elapsed time.
 python3 -m examples.large_interactive
+```
 
 ---
 
