@@ -95,6 +95,37 @@ print(prs.pop())  # -> "task1"
 
 ---
 
+## 📂 Examples
+
+```bash
+# 1. batch_scheduler.py
+# Use Case: Batch job scheduling with priorities
+# Description: Simulates scheduling of jobs where each job has a priority level.
+# Jobs are inserted into PRS rows, and execution respects intra-row priority and row grouping.
+python3 -m examples.batch_scheduler
+
+# 2. game_frames.py
+# Use Case: Frame/event processing in game engines
+# Description: Demonstrates using PRS to queue game frames or events.
+# Each frame has a priority, simulating urgent vs. normal updates.
+# Shows how PRS preserves recent frame grouping while still considering priority.
+python3 -m examples.game_frames
+
+# 3. todo_sticky_notes.py
+# Use Case: Personal task management / grouped to-do lists
+# Description: Simulates a sticky-note style to-do list where each day is a row and tasks have priorities.
+# Users can add tasks, and PRS handles intra-row prioritization while maintaining day-based grouping.
+python3 -m examples.todo_sticky_notes
+
+# 4. large_interactive.py
+# Use Case: Stress test / large-scale simulation
+# Description: Runs PRS with 1000+ synthetic jobs with multiple priority levels.
+# Compares PRS performance against a global priority queue and plain stack.
+# Provides metrics like average completion position, inversions, and elapsed time.
+python3 -m examples.large_interactive
+
+---
+
 ## 🎮 Real-World Applications
 
 - **Game Engines**:  
