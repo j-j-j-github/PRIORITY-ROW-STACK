@@ -160,8 +160,7 @@ python3 -m examples.large_interactive
 ## 🛠️ Roadmap
 
 - [ ] Formalize definition in academic-style paper.  
-- [ ] Implement reference version in **Python**.  
-- [ ] Add optimized versions in **C++** and **Rust**.  
+- [ ] Implement reference version in **Python**.    
 - [ ] Benchmark against stack, queue, priority queue.  
 - [ ] Write blog post explaining PRS with diagrams.  
 - [ ] Submit preprint to **arXiv**.  
