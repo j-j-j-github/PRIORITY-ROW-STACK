@@ -1,5 +1,8 @@
 # Priority-Row-Stack
 A novel data structure combining stack semantics with intra-row priority levels.
+Read the article: 
+https://medium.com/@jeevaljolly/introducing-the-priority-row-stack-prs-the-hybrid-solution-between-stacks-and-priority-queues-a303537072ee
+
 # Priority Row Stack (PRS)
 
 A **novel data structure** that combines the *row-based grouping* of elements with *intra-row priority levels*.  
